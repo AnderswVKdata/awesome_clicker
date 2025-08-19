@@ -68,7 +68,7 @@
                                         Buy <t t-esc="tree"/> (<t t-esc="tree_value.price"/> clicks)
                                     </button>
                                     <button t-on-click="() => this.clicker.buyMaxTree(tree)" class="btn btn-secondary mt-2" t-att-disabled="this.clicker.clicks lt tree_value.price">
-                                        Buy <t t-esc="tree"/> (<t t-esc="tree_value.price"/> clicks)
+                                        Buy Max <t t-esc="tree"/> (<t t-esc="tree_value.price"/> clicks)
                                     </button>
                                 </div>
                             </div>
