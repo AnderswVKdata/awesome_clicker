@@ -6,6 +6,9 @@
             <button class="btn btn-primary ms-1" t-on-click="() => this.clicker.increment(9)">
                 Increment
             </button>
+            <button t-on-click="() => this.clicker.resetGame()" class="btn btn-primary"> 
+                Reset Game
+            </button>
         </div>
         <Notebook>
             <t t-set-slot="clicks" title="'Clicks'" isVisible="this.clicker.level >= 1">

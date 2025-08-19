@@ -10,10 +10,19 @@
                 </button>
                 <t t-set-slot="content">
                     <DropdownItem>
-                        <button class="btn btn-secondary" t-on-click="this.openClientAction"> Open the clicker game </button>
+                        <button class="btn btn-secondary" t-on-click="this.openClientAction"> 
+                            Open the clicker game 
+                        </button>
                     </DropdownItem>
                     <DropdownItem>
-                        <button class="btn btn-secondary" t-on-click="() => this.clicker.buyBot('clickbot')"> Buy a ClickBot </button>
+                        <button class="btn btn-secondary" t-on-click="() => this.clicker.buyBot('clickbot')"> 
+                            Buy a ClickBot 
+                        </button>
+                    </DropdownItem>
+                    <DropdownItem>
+                        <button class="btn btn-secondary" t-on-click="() => this.clicker.resetGame()" > 
+                            Reset Game
+                        </button>
                     </DropdownItem>
                     <DropdownItem t-foreach="this.clicker.trees" t-as="tree" t-key="tree">
                         <t t-esc="tree_value.purchased"/>x
