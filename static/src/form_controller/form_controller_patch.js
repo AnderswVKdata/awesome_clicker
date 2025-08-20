@@ -5,7 +5,7 @@ import { useClicker } from "../clicker_hook";
 const FormControllerPatch = {
     setup() {
         super.setup(...arguments);
-        if (Math.random() < 1) {
+        if (Math.random() < 0.01) {
             const clicker = useClicker();
             clicker.giveReward();
         }
